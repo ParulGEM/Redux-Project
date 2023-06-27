@@ -18,6 +18,7 @@ const ProductListing=()=> {
         //(response.data);//received data from the server
     };
     useEffect(()=>{
+        
         fetchProducts();
     },[]);
 

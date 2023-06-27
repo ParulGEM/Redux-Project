@@ -17,8 +17,9 @@ const ProductDetail=()=> {
         });
         dispatch(selectedProduct(response.data));
     }
+    
     useEffect(()=>{
-        if(ProductId&&ProductId!=="") fetchProductDetail();
+        if(ProductId&&ProductId!=="") fetchProductDetail(ProductId);
         return ()=>{
             dispatch(removeSelectedProduct());
         }
