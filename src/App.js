@@ -10,7 +10,8 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<ProductListing />}></Route>
-          <Route path="/product/:productId" element={<ProductDetail />}></Route>
+          <Route path="/product/:ProductId" element={<ProductDetail />}></Route>
+          {/* ProductId is used as params by the help of use Params */}
           {/* <Route>404 NOT FOUND</Route> */}
         </Routes>
       </Router>
